@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+      background-color: hsl(217, 54%, 11%);
+      color: hsl(215, 51%, 70%);
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300, 400, 600;
+      font-style: normal;
+    }
+
+    .hero {
+      background-color: hsl(216, 50%, 16%);
+      padding: 24px 24px 24px 24px;
+      border: 0;
+      border-radius: 24px;
+      max-width: 300px;
+    }
+
+    .header{
+      color: hsl(0, 0%, 100%);  
+      cursor: pointer;
+    }
+
+    .header:hover{
+        color: hsl(178, 100%, 50%);
+    }
+
+    .image-equilibrium {
+      max-width: 300px;
+      border: 0;
+      border-radius: 24px;
+    }
+
+    .ethandclock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .eth {
+      color: hsl(178, 100%, 50%);
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin-right: auto;
+      align-items: center;
+      align-content: center;
+    }
+
+    .clock{
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    .creator {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+
+    .creator-img {
+      max-width: 40px;
+      max-height: 40px;
+      border: 1px solid white;
+      border-radius: 24px;
+      margin-right: 10px;
+    }
+
+    .white {
+      color: white;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    .white:hover{
+      color: hsl(178, 100%, 50%);
+      cursor: pointer;
+    }
+
+    hr{
+      color: hsl(215, 32%, 27%)
+    }
+
+    .svgicon{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+
+    <img src="images/image-equilibrium.jpg" alt="" class="image-equilibrium">
+
+    <h2 class="header">Equilibrium #3429</h2>
+
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="ethandclock">
+      <span class="eth"><img src="images/icon-ethereum.svg" alt="" class="svgicon"> 0.041 ETH</span>
+      <span class="clock"><img src="images/icon-clock.svg" alt="" class="" class="svgicon"> 3 days left</span>
+    </div>
+    
+    <hr>
+
+    <div class="creator">
+      <img src="images/image-avatar.png" alt="" class="creator-img">
+      <p>Creation of <span class="white">Jules Wyvern</span></p>
+    </div>
+  </div>
+</body>
+
+</html>
